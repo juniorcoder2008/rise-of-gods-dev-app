@@ -4,9 +4,17 @@
 @tailwind components;
 
 .input {
-  @apply px-4 py-2 bg-gray-200 w-2/3 rounded-lg outline-none focus:text-blue-500;
+  @apply px-4 py-2 bg-gray-200 w-10/12 rounded-lg outline-none focus:text-blue-500;
 }
 
 .text-area {
-  @apply px-4 py-2 bg-gray-200 w-2/3 rounded-lg outline-none h-64
+  @apply px-4 py-2 bg-gray-200 w-10/12 rounded-lg outline-none h-64
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-blue-600 text-white w-32 rounded-lg hover:bg-blue-700;
+}
+
+.btn-success {
+  @apply px-6 py-2 bg-emerald-500 text-white w-32 rounded-lg hover:bg-emerald-600
 }

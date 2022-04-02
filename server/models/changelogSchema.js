@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 const changelogSchema = mongoose.Schema({
-  date: String,
+  date: Number,
   version: String,
-  content: [String],
+  content: String,
 });
 
 const Changelog = mongoose.model('ChangelogSchema', changelogSchema);

@@ -33,7 +33,7 @@ const Login = ({ setLoginState, loginState }) => {
         <input ref={userName} type="text" placeholder='User Name' className='input' />
         <input ref={userID} type="text" placeholder='User ID' className='input' />
         <input ref={userPass} type="text" placeholder='Password' className='input' />
-        <button type="submit" className='px-6 py-2 bg-blue-600 text-white w-32 rounded-lg hover:bg-blue-700'>Login</button>
+        <button type="submit" className='btn-primary'>Login</button>
       </form>
     </div>
   )
