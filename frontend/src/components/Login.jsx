@@ -31,8 +31,8 @@ const Login = ({ setLoginState, loginState }) => {
       <h1 className='text-2xl font-bold'>Login</h1>
       <form className='flex flex-col gap-3 mt-5' onSubmit={loginUser}>
         <input ref={userName} type="text" placeholder='User Name' className='input' />
-        <input ref={userID} type="text" placeholder='User ID' className='input' />
-        <input ref={userPass} type="text" placeholder='Password' className='input' />
+        <input ref={userID} type="text" inputMode='number' placeholder='User ID' className='input appearance-none' />
+        <input ref={userPass} type="password" placeholder='Password' className='input' />
         <button type="submit" className='btn-primary'>Login</button>
       </form>
     </div>

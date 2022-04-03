@@ -16,13 +16,13 @@ const OpenChangelog = ({ version, content, setShowChangelogModal, item, id }) =>
   return (
     <div ref={item} className='absolute top-20 text-white bg-gray-900 w-10/12 left-1/2 -translate-x-1/2 h-4/5 py-6 overflow-auto px-10 rounded-xl shadow-lg'>
       <div className='flex justify-between items-center border-b-2 border-gray-700 pb-3'>
-        <h1 className='text-2xl font-bold uppercase text-teal-400'>{version}</h1>
-        <div className="text-rose-400" onClick={() => setShowChangelogModal(false)}><FontAwesomeIcon icon={faClose} size='xl' /></div>
+        <h1 className='text-2xl font-bold uppercase text-teal-400'><span className='text-slate-400 font-light normal-case'>Version: </span>{version}</h1>
+        <div className="text-rose-400 cursor-pointer" onClick={() => setShowChangelogModal(false)}><FontAwesomeIcon icon={faClose} size='xl' /></div>
       </div>
       <div className="md mt-5">
         <Markdown>{content}</Markdown>
       </div>
-      <button onClick={deleteChangelog} className='text-rose-400 absolute bottom-6 right-8'><FontAwesomeIcon icon={faTrashCan} size='lg' /></button>
+      <button onClick={deleteChangelog} className='text-rose-400 absolute bottom-6 right-8 px-2'><FontAwesomeIcon icon={faTrashCan} size='lg' /></button>
     </div>
   )
 }

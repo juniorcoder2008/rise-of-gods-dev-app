@@ -7,7 +7,7 @@ const Changelogs = () => {
   const [changelogs, setChangelogs] = useState([]);
 
   axios.get('http://localhost:5483/get-changelogs').then(info => {
-    setChangelogs(info.data);
+    setChangelogs(info.data.reverse());
   });
 
   return (
