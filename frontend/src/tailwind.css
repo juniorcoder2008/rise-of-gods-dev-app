@@ -21,17 +21,21 @@
 }
 
 .md h1 {
-  @apply text-2xl font-extrabold md:text-3xl;
+  @apply text-2xl font-extrabold md:text-3xl mb-4;
 }
 
 .md h2 {
-  @apply text-xl font-bold md:text-2xl;
+  @apply text-xl font-bold md:text-2xl mb-3;
 }
 
 .md h3 {
-  @apply md:text-xl font-bold;
+  @apply md:text-xl font-bold mb-2;
 }
 
 .md ul {
-  @apply list-disc mt-2 lg:ml-12;
+  @apply list-disc mt-2 lg:ml-12 mb-2;
+}
+
+.md img {
+  @apply mt-4 rounded-md max-w-4xl;
 }
