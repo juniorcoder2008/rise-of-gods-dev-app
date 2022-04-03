@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 
 import getChangelogsRouter from './routes/getChangelogs.js';
 import createChangelogsRouter from './routes/createChangelog.js';
+import deleteChangelogRouter from './routes/deleteChangelog.js';
 import getUsersRouter from './routes/getUsers.js';
 
 import User from "./models/userSchema.js";
@@ -23,6 +24,7 @@ app.use(cors());
 
 app.use('/get-changelogs', getChangelogsRouter);
 app.use('/create-changelog', createChangelogsRouter);
+app.use('/delete-changelog', deleteChangelogRouter);
 app.use('/get-users', getUsersRouter);
 
 let isLoggedIn = false;
