@@ -6,7 +6,7 @@ const Changelogs = () => {
 
   const [changelogs, setChangelogs] = useState([]);
 
-  axios.get('http://localhost:5483/get-changelogs').then(info => {
+  axios.get('https://rog-dev-app.herokuapp.com//get-changelogs').then(info => {
     setChangelogs(info.data.reverse());
   });
 

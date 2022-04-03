@@ -8,7 +8,7 @@ import axios from 'axios';
 const OpenChangelog = ({ version, content, setShowChangelogModal, item, id }) => {
 
   const deleteChangelog = () => {
-    axios.post('http://localhost:5483/delete-changelog', {id: id}).then(() => {
+    axios.post('https://rog-dev-app.herokuapp.com/delete-changelog', {id: id}).then(() => {
       console.log('Delete doc succesfully!');
     })
   }
