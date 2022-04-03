@@ -10,7 +10,7 @@ const CreateChangelog = () => {
   const createNewChangelog = async e => {
     e.preventDefault();
 
-    axios.post('https://rog-dev-app.herokuapp.com//create-changelog', {date: date, version: version.current.value, content: content.current.value}).then(() => {
+    axios.post('https://rog-dev-app.herokuapp.com/create-changelog', {date: date, version: version.current.value, content: content.current.value}).then(() => {
       console.log('test');
       version.current.value = '';
       content.current.value = '';

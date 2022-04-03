@@ -12,7 +12,7 @@ const Login = ({ setLoginState, loginState }) => {
 
     console.log(`Name: ${userName.current.value}; ID: ${userID.current.value}; Password: ${userPass.current.value}`);
 
-    axios.post('https://rog-dev-app.herokuapp.com//login', { name: userName.current.value, password: userPass.current.value, id: userID.current.value }).then(res => {
+    axios.post('https://rog-dev-app.herokuapp.com/login', { name: userName.current.value, password: userPass.current.value, id: userID.current.value }).then(res => {
       console.log(res.data);
 
       if (res.data.status === 'ok') {
